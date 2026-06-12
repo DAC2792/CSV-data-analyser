@@ -14,6 +14,15 @@ def analyse_csv(df):
     print(f"Rows and Columns: {df.shape}")
     print(f"Columns: {df.columns}")
     print(f"Summary Statistics: {df.describe()}")
+    print(f"Max value: {df['sales'].max()}")
+    print(f"Minimum value: {df['sales'].min()}")
+
+    with open("outputs/results.txt", "w") as f:
+        f.write(f"Rows and Columns: {df.shape}\n")
+        f.write(f"Columns: {df.columns}\n")
+        f.write(f"Summary Statistics: {df.describe()}\n")
+        f.write(f"Max value: {df['sales'].max()}\n")
+        f.write(f"Minimum value: {df['sales'].min()}\n")
 
 #Call main block to begin running all code
 if __name__ == "__main__":
