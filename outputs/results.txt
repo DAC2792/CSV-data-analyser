@@ -11,3 +11,5 @@ min    4300.000000
 max    9100.000000
 Max value: 9100
 Minimum value: 4300
+Max value: March
+Minimum value: February
